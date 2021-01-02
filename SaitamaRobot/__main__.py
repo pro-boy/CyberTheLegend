@@ -51,15 +51,18 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}! 
-I am an Anime themed group management bot.
-Build by weebs for weebs, I specialize in managing anime and similar themed groups.
-You can find my list of available commands with /help.
+Hɪ  {}, Mʏ Nᴀᴍᴇ Is {}! 
+I ᴀᴍ ᴀɴ Cʏʙᴏʀɢ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ.
+Bᴜɪʟᴅ Bʏ Wᴇᴇʙs Fᴏʀ Wᴇᴇʙs, I Sᴘᴇᴄɪᴀʟɪᴢᴇ Iɴ Mᴀɴᴀɢɪɴɢ Aɴɪᴍᴇ Aɴᴅ Sɪᴍɪʟᴀʀ Tʜᴇᴍᴇᴅ Gʀᴏᴜᴘs.\n
+================================
+Yᴏᴜ Cᴀɴ Fɪɴᴅ Mʏ Lɪsᴛ Oғ Aᴠᴀɪʟᴀʙʟᴇ Cᴏᴍᴍᴀɴᴅs Wɪᴛʜ /help.
+Jᴏɪɴ Fᴏʀ Cʏʙᴏʀɢ Uᴘᴅᴀᴛᴇs Bʏ Cʟɪᴄᴋɪɴɢ [Hᴇʀᴇ](https://t.me/Cyber_legendss).\n
+================================
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Hero For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
+I'm a Cyborg For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -77,7 +80,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/46e6d9dfcb3eb9eae95d9.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/8f45ff993591c8b937293.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -200,27 +203,10 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Saitama to your group",
+                            text="Add Cyber to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
-                    ],
-                     [
-                         InlineKeyboardButton(
-                             text="🚑 Support Group",
-                             url=f"https://t.me/{SUPPORT_CHAT}"),
-                         InlineKeyboardButton(
-                             text="🔔 Updates Channel",
-                             url="https://t.me/OnePunchUpdates")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="🧾 Getting started guide",
-                             url="https://t.me/OnePunchUpdates/29")
-                     ],
-                     [
-                         InlineKeyboardButton(
-                             text="🗄 Source code",
-                             url="https://github.com/AnimeKaizoku/SaitamaRobot")
+                    
                      ]]))
     else:
         update.effective_message.reply_text(
