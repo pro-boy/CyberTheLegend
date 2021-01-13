@@ -52,7 +52,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi , my name is ASUNA
+Hi , my name is Tedeza
 I am a cute group management bot.
 🧿 I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL-x banning system which safegaurds and helps your group from spammers.\n
 If You want A healthy And Save Group From Spammer Then Add me Their I Will Help You.
@@ -63,7 +63,7 @@ Hit This --> /help Too See My Commands.\n\n
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Hellbot For Fun And Managing Group Simply Promote Me admin There. And Type My Commands
+I'm a Tedeza For Fun And Managing Group Simply Promote Me admin There. And Type My Commands
 the things I can help you with.
 
 *Main* commands available:
@@ -81,7 +81,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/24d5352ec4ef7ba2b1043.jpg"
+SAITAMA_IMG = "https://telegra.ph/file/3fd5d1c8d3992b07e6eae.jpg"
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Hellbot is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
@@ -203,7 +203,7 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add HellBot to your group",
+                            text="☑️ Add Tedeza to your group",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                      ]]))
