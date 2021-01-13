@@ -63,15 +63,15 @@ Jᴏɪɴ Fᴏʀ Cʏʙᴏʀɢ Uᴘᴅᴀᴛᴇs Bʏ Cʟɪᴄᴋɪɴɢ [Hᴇʀᴇ]
 HELP_STRINGS = """
 Hey there! My name is *{}*.
 I'm a Cyborg For Fun and help admins manage their groups with One Punch! Have a look at the following for an idea of some of \
-the things I can help you with.
+the things I can help you with [^_^](https://telegra.ph/file/329b1b54cc5183702a274.jpg).
 
 *Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
+ ◉ /help: PM's you this message.
+ ◉ /help <module name>: PM's you info about that module.
+ ◉ /donate: information on how to donate!
+ ◉ /settings:
+   ◉ in PM: will send you your settings for all supported modules.
+   ◉ in a group: will redirect you to pm, with all that chat's settings.
 
 
 {}
